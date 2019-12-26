@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradien1"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/bendera"
+        android:background="@drawable/gradien4"
+        android:layout_width="match_parent"
+        android:layout_height="2450dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp"
+                android:layout_width="220dp"
+                android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/lineProfile"
+                android:src="@drawable/gamelogo"
+                android:layout_width="220dp"
+                android:layout_height="120dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/score"
+                    android:text="SCORE"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:text="YOUR CURRENT SCORE"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/transparent_grey"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:id="@+id/linePilGan"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="50dp"
+                android:paddingLeft="30dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="0dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp">
+
+                        <ImageView
+                            android:src="@drawable/gbr_pilihanganda"
+                            android:background="@color/aqua"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:text="Kuis Pilihan Ganda"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/BLACK"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineEssay"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="50dp"
+                android:paddingLeft="30dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="0dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp">
+
+                    <ImageView
+                        android:src="@drawable/gbr_essay"
+                        android:background="@color/aqua"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:gravity="center"
+                    android:text="Kuis Essay"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/BLACK"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Logout"
+            android:background="@drawable/button1"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

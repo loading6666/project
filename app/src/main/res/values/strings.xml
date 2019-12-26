@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">KUIS LUCU</string>
+    <string name="category">Macam Macam Quiz</string>
+    <string name="grid_image">Grid Image</string>
+    <string name="share_with">Share with</string>
+
+    <string name="matematika_category">Matematika</string>
+    <string name="ipa_category">IPA</string>
+    <string name="ips_category">IPS</string>
+
+
+    <string-array name="category_title">
+        <item>@string/matematika_category</item>
+        <item>@string/ipa_category</item>
+        <item>@string/ips_category</item>
+
+    </string-array>
+
+    <string name="matematika">matematika</string>
+    <string name="ipa">ipa</string>
+    <string name="ips">ips</string>
+    <string name="btn_update">update</string>
+    <string name="btn_delete">delete</string>
+
+
+    <string-array name="category_ID">
+        <item>@string/matematika</item>
+        <item>@string/ipa</item>
+        <item>@string/ips</item>
+
+    </string-array>
+
+
+</resources>
